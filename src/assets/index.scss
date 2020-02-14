@@ -1,0 +1,79 @@
+@import '~antd/dist/antd.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  h1, h2 {
+    color: #fff;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header {
+  padding: 20px;
+  img {
+    max-width: 100px;
+    max-height: 200px;
+    position: fixed;
+    top: 150px;
+    left: 100px;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  margin: 0 auto;
+  .results, form {
+    padding: 0 175px;
+    p {
+      color: #fff;
+    }
+  }
+  form {
+    .question-container {
+      margin-bottom: 20px;
+    }
+    button {
+      span {
+        color: #000;
+      }
+      &:hover {
+        span {
+          color: #40a9ff;
+          transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+      }
+    }
+    span {
+      color: #fff;
+    }
+    .ant-checkbox-group, .ant-radio-group {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .results {
+    .capitalized {
+      text-transform: capitalize;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0 20px 20px;
+    .results, form {
+      padding: 0;
+    }
+  }
+}
