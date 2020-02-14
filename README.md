@@ -2,13 +2,14 @@
 test application for codeempire
 
 ## Project setup
-Before instalation, run 'json-server --watch db.json' for database run
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+Before start, run 'json-server --watch db.json' for database run
 ```
+json-server --watch db.json
 npm start
 ```
 
